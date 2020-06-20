@@ -1,0 +1,1 @@
+export APP_KEY = 'o5qj7a%@yz0@jo6mtqhu^ktzuy-jg*m2^o#7hw7nxtdyv5kw^f'
