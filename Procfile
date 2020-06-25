@@ -1,2 +1,2 @@
-web: gunicorn wasteapp.wsgi
+web: gunicorn wasteapp.wsgi --log-file -
 
