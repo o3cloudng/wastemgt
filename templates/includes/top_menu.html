@@ -1,13 +1,15 @@
+{% load staticfiles %}
 <!-- BEGIN: Header-->
+
 <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-dark navbar-shadow">
     <div class="navbar-wrapper">
       <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
-          <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+          <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="fa fa-bars font-large-1"></i></a></li>
           <li class="nav-item mr-auto"><a class="navbar-brand" href="index-2.html"><img class="brand-logo" alt="modern admin logo" src="{% static 'app-assets/images/logo/logo.png' %}">
               <h3 class="brand-text">Modern</h3></a></li>
           <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon ft-toggle-right font-medium-3 white" data-ticon="ft-toggle-right"></i></a></li>
-          <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
         </ul>
       </div>
       <div class="navbar-container content">
@@ -15,7 +17,7 @@
           <ul class="nav navbar-nav mr-auto float-left">
             <li class="nav-item d-none d-lg-block">
               <a class="nav-link nav-link-expand" href="#">
-                <i class="ficon ft-maximize"></i>
+                <i class="fa fa-maximize"></i>
               </a>
             </li>
             <li class="dropdown nav-item mega-dropdown d-none d-lg-block"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Mega</a>
@@ -28,17 +30,17 @@
                 <li class="col-md-5 px-2">
                   <h6 class="font-weight-bold font-medium-2 ml-1">Admin Panel</h6>
                   <ul class="row mt-2">
-                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mb-xl-3" href="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/ecommerce-menu-template" target="_blank"><i class="la la-shopping-cart font-large-1 mr-0"></i>
+                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mb-xl-3" href="#" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         <p class="font-medium-2 mt-25 mb-0">eCommerce</p></a></li>
-                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mb-xl-3" href="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/travel-menu-template" target="_blank"><i class="la la-plane font-large-1 mr-0"></i>
+                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mb-xl-3" href="#" target="_blank"><i class="fa fa-plane font-large-1 mr-0"></i>
                         <p class="font-medium-2 mt-25 mb-0">Travel</p></a></li>
-                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mb-xl-3 mt-75 mt-xl-0" href="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/hospital-menu-template" target="_blank"><i class="la la-stethoscope font-large-1 mr-0"></i>
+                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mb-xl-3 mt-75 mt-xl-0" href="#" target="_blank"><i class="fa fa-stethoscope font-large-1 mr-0"></i>
                         <p class="font-medium-2 mt-25 mb-0">Hospital</p></a></li>
-                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mt-75 mt-xl-0" href="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/crypto-menu-template" target="_blank"><i class="la la-bitcoin font-large-1 mr-0"></i>
+                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mt-75 mt-xl-0" href="#" target="_blank"><i class="fa fa-bitcoin font-large-1 mr-0"></i>
                         <p class="font-medium-2 mt-25 mb-50">Crypto</p></a></li>
-                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mt-75 mt-xl-0" href="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/support-menu-template" target="_blank"><i class="la la-tag font-large-1 mr-0"></i>
+                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mt-75 mt-xl-0" href="#" target="_blank"><i class="fa fa-tag font-large-1 mr-0"></i>
                         <p class="font-medium-2 mt-25 mb-50">Support</p></a></li>
-                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mt-75 mt-xl-0" href="https://pixinvent.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/bank-menu-template" target="_blank"><i class="la la-bank font-large-1 mr-0"></i>
+                    <li class="col-6 col-xl-4"><a class="text-center mb-2 mt-75 mt-xl-0" href="#" target="_blank"><i class="fa fa-bank font-large-1 mr-0"></i>
                         <p class="font-medium-2 mt-25 mb-50">Bank</p></a></li>
                   </ul>
                 </li>
@@ -65,7 +67,8 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#"><i class="ficon ft-search"></i></a>
+            <li class="nav-item nav-search"><a class="nav-link nav-link-search" href="#">
+              <i class="fa fa-search"></i></a>
               <div class="search-input">
                 <input class="input" type="text" placeholder="Explore Modern..." tabindex="0" data-search="template-list">
                 <div class="search-input-close"><i class="ft-x"></i></div>
@@ -77,7 +80,8 @@
             <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-gb"></i><span class="selected-language"></span></a>
               <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a></div>
             </li>
-            <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell"></i><span class="badge badge-pill badge-danger badge-up badge-glow">5</span></a>
+            <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="fa fa-bell-o" aria-hidden="true"></i>
+              <span class="badge badge-pill badge-danger badge-up badge-glow">5</span></a>
               <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                 <li class="dropdown-menu-header">
                   <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span></h6><span class="notification-tag badge badge-danger float-right m-0">5 New</span>
@@ -124,7 +128,7 @@
                 <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all notifications</a></li>
               </ul>
             </li>
-            <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail"></i></a>
+            <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
               <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                 <li class="dropdown-menu-header">
                   <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span></h6><span class="notification-tag badge badge-warning float-right m-0">4 New</span>
@@ -166,8 +170,8 @@
               </ul>
             </li>
             <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="mr-1 user-name text-bold-700">John Doe</span><span class="avatar avatar-online"><img src="{% static 'app-assets/images/portrait/small/avatar-s-19.png' %}" alt="avatar"><i></i></span></a>
-              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="user-profile.html"><i class="ft-user"></i> Edit Profile</a><a class="dropdown-item" href="app-kanban.html"><i class="ft-clipboard"></i> Todo</a><a class="dropdown-item" href="user-cards.html"><i class="ft-check-square"></i> Task</a>
-                <div class="dropdown-divider"></div><a class="dropdown-item" href="login-with-bg-image.html"><i class="ft-power"></i> Logout</a>
+              <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="userprofile"><i class="ft-user"></i> Edit Profile</a><a class="dropdown-item" href="app-kanban.html"><i class="ft-clipboard"></i> Todo</a><a class="dropdown-item" href="user-cards.html"><i class="ft-check-square"></i> Task</a>
+                <div class="dropdown-divider"></div><a class="dropdown-item" href="/accounts/logout"><i class="ft-power"></i> Logout</a>
               </div>
             </li>
           </ul>

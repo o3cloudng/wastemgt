@@ -1,0 +1,153 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<!-- Mirrored from WASTE MGT.com/modern-admin-clean-bootstrap-4-dashboard-html-template/html/ltr/vertical-modern-menu-template/register-with-navbar.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jun 2020 13:50:58 GMT -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description"
+    content="Modern admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities with bitcoin dashboard.">
+  <meta name="keywords"
+    content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
+  <meta name="author" content="WASTE MGT">
+  <title>{{ title }}</title>
+  <link rel="apple-touch-icon" href="{% static 'app-assets/images/ico/apple-icon-120.png' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'app-assets/images/ico/favicon.ico' %}">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/vendors.min.css' %}">
+  <!-- END: Vendor CSS-->
+
+  <!-- BEGIN: Theme CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/bootstrap-extended.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/colors.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/components.min.css' %}">
+  <!-- END: Theme CSS-->
+
+  <!-- BEGIN: Page CSS-->
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'app-assets/css/core/menu/menu-types/vertical-menu-modern.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/colors/palette-gradient.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/pages/login-register.min.css' %}">
+  <!-- END: Page CSS-->
+
+  <!-- ICONS CDN -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- END ICONS CDN -->
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+  <!-- END: Custom CSS-->
+  <style>
+    .navbar {
+      padding: 0px !important;
+    }
+    .navbar-dark, .navbar-dark.navbar-horizontal {
+      background: #1f6007 !important;
+    }
+    .bg-cyan.bg-lighten-2, .btn-cyan.btn-lighten-2 {
+      background-color: #efefff !important;
+  }
+  </style>
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 1-column  bg-cyan bg-lighten-2 fixed-navbar" data-open="click"
+  data-menu="vertical-menu-modern" data-col="1-column">
+
+  <!-- BEGIN: Header-->
+  <nav
+    class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-dark navbar-shadow">
+    <div class="navbar-wrapper">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs"
+              href="#"><i class="fa fa-bars font-large-1"></i></a></li>
+          <li class="nav-item"><a class="navbar-brand" href="/"><img class="brand-logo" alt="modern admin logo"
+                src="{% static 'app-assets/images/logo/logo.png' %}">
+              <h3 class="brand-text">WASTE MGT</h3>
+            </a></li>
+          <li class="nav-item d-md-none"><a class="nav-link open-navbar-container" data-toggle="collapse"
+              data-target="#navbar-mobile"><i class="fa fa-ellipsis-v"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-container">
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-mobile">
+          <ul class="nav navbar-nav">
+              {% if user.is_authenticated %}
+              <li class="nav-item"><a class="nav-link mr-2 nav-link-label" href="#">Hello {{ user.first_name }}</a></li>
+              <li class="nav-item"><a class="nav-link mr-2 nav-link-label" href="/accounts/logout">Logout</a></li>
+              {% else %}
+            <li class="nav-item"><a class="nav-link mr-2 nav-link-label" href="/accounts/login">Login</a></li>
+            <li class="nav-item"><a class="nav-link mr-2 nav-link-label" href="/accounts/register">Register</a></li>
+            {% endif %}
+            <li class="nav-item"><a class="nav-link mr-2 nav-link-label" href="/"><i
+                  class="fa fa-chevron-left"></i></a></li>
+            <li class="dropdown nav-item"><a class="nav-link mr-2 nav-link-label" href="#" data-toggle="dropdown"><i
+                  class="fa fa-cog"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END: Header-->
+
+ {% block content %}
+ {% endblock %}
+
+
+  <!-- BEGIN: Customizer-->
+
+  <!-- End: Customizer-->
+
+  <!-- Buynow Button-->
+  <!-- <div class="buy-now"><a href="#" target="_blank" class="btn btn-info btn-glow round px-2">Buy Now</a> -->
+
+  </div>
+  <div class="sidenav-overlay"></div>
+  <div class="drag-target"></div>
+
+  <!-- BEGIN: Footer-->
+  <footer class="footer fixed-bottom footer-dark navbar-border navbar-shadow">
+    <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span
+        class="float-md-left d-block d-md-inline-block">Copyright &copy; 2020 </span><span
+        class="float-md-right d-none d-lg-block">WASTE MGT<span id="scroll-top"></span></span></p>
+  </footer>
+  <!-- END: Footer-->
+
+
+  <!-- BEGIN: Vendor JS-->
+  <script src="{% static 'app-assets/vendors/js/vendors.min.js' %}"></script>
+  <!-- BEGIN Vendor JS-->
+
+  <!-- BEGIN: Page Vendor JS-->
+  <script src="{% static 'app-assets/vendors/js/forms/validation/jqBootstrapValidation.js' %}"></script>
+  <!-- END: Page Vendor JS-->
+
+  <!-- BEGIN: Theme JS-->
+  <script src="{% static 'app-assets/js/core/app-menu.min.js' %}"></script>
+  <script src="{% static 'app-assets/js/core/app.min.js' %}"></script>
+  <script src="{% static 'app-assets/js/scripts/customizer.min.js' %}"></script>
+  <script src="{% static 'app-assets/js/scripts/footer.min.js' %}"></script>
+  <!-- END: Theme JS-->
+
+  <!-- BEGIN: Page JS-->
+  <script src="{% static 'app-assets/js/scripts/forms/form-login-register.min.js' %}"></script>
+  <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>

@@ -1,0 +1,75 @@
+{% extends 'client/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container" data-aos="fade-in">
+      <h1>Register</h1>
+      <h2>We are in the business of keeping the city clean and healthy</h2>
+      <div class="d-flex align-items-center">
+        <i class="bx bxs-right-arrow-alt get-started-icon"></i>
+        <!-- <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12" data-aos="fade-up" style="background:#fafafa; border-radius:10px; box-shadow:1px 3px 3px #ccc">
+            <div class="col-md-8 offset-md-2 p-5">
+              <!-- <h3>Register</h3> -->
+              <p>
+                <div class="card-body p-5">
+                  {% if messages %}
+                      {% for message in messages %}
+                      
+                      <div {% if message.tags %} class="{{ message.tags }} alert alert-danger mb-2"{% endif %}>{{ message }}</div>
+                      {% endfor %}
+                  {% endif %}
+                    <form class="form-horizontal" method="POST" action="register">
+  
+                    {% csrf_token %}
+  
+                    {{ form }}
+                    <button type="submit" class="btn btn-info btn-block">Register</button>
+                  </form>
+                </div>
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="fade-up">
+
+        <div class="owl-carousel clients-carousel">
+          <img src="{% static 'assets/assets/img/clients/client-1.png' %}" alt="">
+          <img src="{% static 'assets/assets/img/clients/client-2.png' %}" alt="">
+          <img src="{% static 'assets/assets/img/clients/client-3.png' %}" alt="">
+          <img src="{% static 'assets/assets/img/clients/client-4.png' %}" alt="">
+          <img src="{% static 'assets/assets/img/clients/client-5.png' %}" alt="">
+          <img src="{% static 'assets/assets/img/clients/client-6.png' %}" alt="">
+          <img src="{% static 'assets/assets/img/clients/client-7.png' %}" alt="">
+          <img src="{% static 'assets/assets/img/clients/client-8.png' %}" alt="">
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+  
+    
+  </main><!-- End #main -->
+  {% endblock content%}
